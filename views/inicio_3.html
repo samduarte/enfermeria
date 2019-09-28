@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1,shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Enfermeria</title>
+    </head>
+    <body>
+        <div class="container-float">
+            <nav class="navbar navbar-expand-sm  navbar-dark bg-info"> 
+                <a href="#" class="navbar-brand d-lg-none" style="width: 25px;">
+                    <img src="../img/sinu.png.png" style="width: 35px; "> Enfermeria   
+                </a>
+                <br/>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#uno" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="uno" >
+                    <ul class="navbar-nav mx-auto" >
+                        <li class="nav-item"><a href="Inicio.html" id="txt_menu" class="nav-link active" >INICIO</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item"><a href="test_Apgar.php" id="txt_menu" class="nav-link active" >Test de Apgar</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item"><a href="test_capurro.php" id="txt_menu" class="nav-link active" >Test de Capurro</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item"><a id="logo" class="nav-link" href="Inicio.html"><img src="../img/enfermeria_logo.png" style="width: 35px; ">ENFERMERIA</a> </li>
+                        <li class="nav-item"><a href="info_Mama.php" id="txt_menu" class="nav-link active" >Registro Maternal</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item"><a href="info_bebe.php" id="txt_menu" class="nav-link active" >Registro Neonatal</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-item"><a href="nanda.php" id="txt_menu" class="nav-link active" >NANDA</a></li>
+                        
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-12 border" style="text-align: center;"><br>                 
+
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a  href="Inicio_2.html">Regresar</a></li>
+                        <li class="breadcrumb-item"><a  href="inicio_2.html">Cuidados del cordon umbilical</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_3.html">Prevencion y control de enfermedades</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_4.html">Cuidados del recien nacido</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_4.html">Siguiente</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="col-12"><br>
+
+                    <h3 class="titulos">PREVENCIÓN Y CONTROL DE ENFERMEDADES</h3>
+                    <p>Las vacunas son sustancias que contienen virus o bacterias atenuados,
+                        muertos o fragmentos que al introducirse en el cuerpo de su hijo estimulan
+                        su sistema de inmunidad para generar defensas (anticuerpos) que lo protegen contra algunas enfermedades graves.</p>
+
+
+                </div>
+                <br>
+                <div class="col-6 border"><br>
+                    <h4 class="titulos">Vacuna BCG</h4>
+                    <p>Previene la tuberculosis meníngea (infección del cerebro) y muerte. Es una dosis inyectada en el brazo derecho. La reacción de la vacuna provoca en la piel una roncha que con los días forma pus, costra y deja una pequeña cicatriz. No aplique nada, sólo lave con agua y jabón.
+                        Es importante conocer que la luz solar al caer directamente en frasco deteriora la vacuna en cinco minutos y si cae en forma indirecta destruye el 50% de los basilos en 15 minutos, una vez reconstituida la vacuna, pierde la viabilidad después de 8 horas si se conserva en un ambiente frio y aséptico, por ello la inmunización debe realizarse sin retraso desechando el sobrante.
+                        Esta vacuna está indicada en recién nacidos con peso mayor o igual de 2500 gramos y sin ninguna enfermedad que comprometa su estado de salud.  
+                    </p>
+                    <br>
+
+                    <br>
+                    <h5 class="titulos">La vacuna BCG no debe administrarse a niños que presentan:</h5>
+                    <p class="parrafo"></p> </p>
+
+                    <ul>
+                        <li>Inmunidad comprometida, SIDA, leucemia, linfoma o malignidad generalizada. </li>
+                        <li>espuesta inmunológica alterada por esteroides, antimetabolitos o radiación.</li>
+                        <li>Niños menores de 6 horas nacido y de bajo peso al nacer (menor de 2500 gramos).</li>
+                    </ul>
+                    <br>
+
+                    <img id="myImg" src="../img/prevencion.png" alt="Snow" class="img img-fluid">
+
+                   
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                    <script>
+
+                        var modal = document.getElementById('myModal');
+
+
+                        var img = document.getElementById('myImg');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function () {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+
+
+                        var span = document.getElementsByClassName("close")[0];
+
+
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                    </script>
+                </div>
+                <div class="col-6 border"><br>
+                    <h4 class="titulos">Vacuna anti-hepatitis B</h4>
+                    <p>La vacuna contra la hepatitis B deberá ser administrada tan pronto como sea posible luego del nacimiento 
+                        (preferiblemente en las primeras 12 horas), es llamada dosis del recién nacido. Se continúa luego con
+                        la primera dosis a partir del segundo mes de vida, la segunda dosis a partir del cuarto mes de vida
+                        y la tercera dosis a partir del sexto mes de vida. El total de dosis aplicadas a un lactante es de cuatro.<br>
+                        En recién nacidos pre término y con un peso inferior a 2.000 gramos, se debe esperar hasta alcanzar 2.000
+                        o más gramos de peso para recibir la dosis correspondiente, en caso de ser frutos de madres con HBsAg negativos.<br>
+                        Protege contra la hepatitis B. Esta infección se trasmite por las mamás infectadas a los hijos sin saberlo,
+                        por lo que se la debe aplicar para evitar
+                        que su hijo enferme.<br>
+                    </p>
+                    <ul>
+                        <li>La vacuna se aplica mediante inyección (0.5 ml), en el muslo izquierdo en los menores de 18 meses de edad.</li>
+
+                        <li> La vacuna contra la hepatitis B se aplica en los menores de 5 años de edad, el esquema consiste de 3 dosis,
+                            la primera dosis se aplica de preferencia el día de su nacimiento (en caso extremo dentro de los primeros 7 días de vida)
+                            la segunda dosis a los 2 meses y  la tercera a los 6 meses de edad.</li>
+
+                        <li>En caso de que por otras razones no sean vacunados dentro de los primeros 7 días de nacidos, la vacuna se aplica
+                            a los 2, 4 y 6 meses de edad. O 4, 6 y 15 meses de edad. </li>
+
+                        <li>Son necesarias las 3 inyecciones para estar completamente protegido.</li>
+
+                    </ul>
+                    <br>
+                    <img class="img img-fluid" src="../img/vacuna_3.jpg">
+
+                </div>
+
+
+                <div class="col-12 border" style="text-align: center;"><br>                 
+
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a  href="Inicio_2.html">Regresar</a></li>
+                        <li class="breadcrumb-item"><a  href="inicio_2.html">Cuidados del cordon umbilical</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_3.html">Prevencion y control de enfermedades</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_4.html">Cuidados del recien nacido</a></li>
+                        <li class="breadcrumb-item"><a  href="Inicio_4.html">Siguiente</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+        <script src="../js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>	
+    </body>
+</html>
